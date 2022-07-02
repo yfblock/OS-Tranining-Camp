@@ -2,6 +2,10 @@
 
 记录学习os和rust经验
 
+## repo url
+
+https://github.com/LearningOS/rust-based-os-comp2022/blob/main/scheduling.md
+
 ## 结构说明
 
 - other：其他的资料
