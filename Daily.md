@@ -18,4 +18,18 @@
 
 3. 项目要求: 
 
+## 2022-7-3
+
+rust智能指针图
+
+![rust-containers.png](assets-Daily/e5e1f4239aefd1cdcdbece7f4488836714f4cb26.png)
+
+
+
+## 今日完成事务
+
+1. 完成lab0-0
+
+2. 重新学习rust智能指针
+
 
