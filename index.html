@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+  <link href="https://cdn.bytedance.com/cdn/docsify/4.12.2/themes/vue.min.css" type="text/css" rel="stylesheet" />
+  <!-- katex css -->
+  <link rel="stylesheet" href="https://cdn.bytedance.com/cdn/KaTeX/0.15.2/katex.min.css"/>
+  <!-- mermaid css -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css"> -->
+</head>
+<body>
+  <div id="app">Loading...</div>
+  <!-- mermaid -->
+  <!-- <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script> -->
+  <script src="https://cdn.bytedance.com/cdn/mermaid/8.14.0/mermaid.min.js"></script>
+  <script>
+    var num = 0;
+    mermaid.initialize({ startOnLoad: false });
+    window.$docsify = {
+      name: 'yufeng\'s note',
+      repo: '',
+      loadSidebar: true,
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+      // 'flexible-alerts': {
+      //   style: 'flat'
+      // },
+      markdown: {
+        renderer: {
+          code: function(code, lang) {
+            if (lang === "mermaid") {
+              return (
+                '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
+              );
+            }
+            return this.origin.code.apply(this, arguments);
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="https://cdn.bytedance.com/cdn/docsify/4.12.2/docsify.min.js"></script>
+
+  <!-- 复制到剪切板 -->
+  <script src="https://cdn.bytedance.com/cdn/docsify-copy-code/2.1.1/docsify-copy-code.min.js"></script>
+
+  <!-- 图片缩放 Zoom image -->
+  <script src="https://cdn.bytedance.com/cdn/docsify/4.12.2/plugins/zoom-image.min.js"></script>
+
+  <!-- emoji -->
+  <script src="https://cdn.bytedance.com/cdn/docsify/4.12.2/plugins/emoji.min.js"></script>
+
+  <!-- Pagination 分页插件 -->
+  <script src="https://unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+  <!-- katex -->
+  <script src="https://unpkg.com/docsify-katex@latest/dist/docsify-katex.js"></script>
+
+  <!-- 动态提示框 flexible-alerts -->
+  <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+
+  <!-- docsify-example-panels (latest) -->
+  <script src="https://unpkg.com/docsify-example-panels"></script>
+
+  <!-- 语法高粱 -->
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-bash.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-rust.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-toml.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-javascript.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-typescript.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-java.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-kotlin.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-xml-doc.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-cpp.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-css.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-docker.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-sass.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-nasm.min.js"></script>
+  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-python.min.js"></script>
+</body>
+</html>
+
