@@ -24,12 +24,21 @@ rust智能指针图
 
 ![rust-containers.png](assets-Daily/e5e1f4239aefd1cdcdbece7f4488836714f4cb26.png)
 
-## 今日完成事务
+#### 今日完成事务
 
 1. 完成lab0-0
 
 2. 重新学习rust智能指针
 
+## 2022-7-4
+
+#### 今日完成事务
+
+1. 补充rustlings
+
+#### 详细细节
+
+[Rust宏编程指南【Macro】_Tomhex的博客-CSDN博客_rust宏编程](https://blog.csdn.net/m0_52507081/article/details/122615909)
 ## 2022-7-4
 
 #### 今日完成事务
