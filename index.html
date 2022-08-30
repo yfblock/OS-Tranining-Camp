@@ -22,9 +22,15 @@
     var num = 0;
     mermaid.initialize({ startOnLoad: false });
     window.$docsify = {
-      name: 'yufeng\'s note',
+      name: '操作系统训练营笔记',
       repo: '',
       loadSidebar: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      relativePath: true,
+      autoHeader: true,
+      subMaxLevel: 3,
       pagination: {
         previousText: '上一章节',
         nextText: '下一章节',
@@ -73,20 +79,20 @@
   <script src="https://unpkg.com/docsify-example-panels"></script>
 
   <!-- 语法高粱 -->
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-bash.min.js"></script>
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-rust.min.js"></script>
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-toml.min.js"></script>
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-javascript.min.js"></script>
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-typescript.min.js"></script>
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-java.min.js"></script>
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-kotlin.min.js"></script>
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-xml-doc.min.js"></script>
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-cpp.min.js"></script>
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-css.min.js"></script>
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-docker.min.js"></script>
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-sass.min.js"></script>
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-nasm.min.js"></script>
-  <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/prism/9000.0.1/components/prism-python.min.js"></script>
+  <script src="https://cdn.bytedance.com/cdn/prism/9000.0.1/components/prism-bash.min.js"></script>
+  <script src="https://cdn.bytedance.com/cdn/prism/9000.0.1/components/prism-rust.min.js"></script>
+  <script src="https://cdn.bytedance.com/cdn/prism/9000.0.1/components/prism-toml.min.js"></script>
+  <script src="https://cdn.bytedance.com/cdn/prism/9000.0.1/components/prism-javascript.min.js"></script>
+  <script src="https://cdn.bytedance.com/cdn/prism/9000.0.1/components/prism-typescript.min.js"></script>
+  <script src="https://cdn.bytedance.com/cdn/prism/9000.0.1/components/prism-java.min.js"></script>
+  <script src="https://cdn.bytedance.com/cdn/prism/9000.0.1/components/prism-kotlin.min.js"></script>
+  <script src="https://cdn.bytedance.com/cdn/prism/9000.0.1/components/prism-xml-doc.min.js"></script>
+  <script src="https://cdn.bytedance.com/cdn/prism/9000.0.1/components/prism-cpp.min.js"></script>
+  <script src="https://cdn.bytedance.com/cdn/prism/9000.0.1/components/prism-css.min.js"></script>
+  <script src="https://cdn.bytedance.com/cdn/prism/9000.0.1/components/prism-docker.min.js"></script>
+  <script src="https://cdn.bytedance.com/cdn/prism/9000.0.1/components/prism-sass.min.js"></script>
+  <script src="https://cdn.bytedance.com/cdn/prism/9000.0.1/components/prism-nasm.min.js"></script>
+  <script src="https://cdn.bytedance.com/cdn/prism/9000.0.1/components/prism-python.min.js"></script>
 </body>
 </html>
 
